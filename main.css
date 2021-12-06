@@ -2,13 +2,14 @@
   display: none;
   border: 1px solid black;
   width: 400px;
-  height: 400px;
+  height: 200px;
   position: absolute;
   left: 50%;
   top: 300px;
   transform: translate(-50%,-50%);
   z-index: 200;
   background-color: white;
+  border-radius: 14px;
   justify-content: center;
 }
 
@@ -17,6 +18,21 @@
 }
 
 .dialog__btn {
+  cursor: pointer;
+  padding: 12px 24px;
+  background-color: teal;
+  border: 1px solid teal;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.dialog__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .dialog__backdrop {
@@ -33,4 +49,23 @@
 
 .dialog__backdrop--active {
   display: block;
+}
+
+
+.dialog__actionbuttons {
+  padding: 8px 12px;
+  background: white;
+  border-radius: 25px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.cancel {
+  color: red;
+  border: 1px solid red;
+}
+
+.yes {
+  color: green;
+  border: 1px solid green;
 }
