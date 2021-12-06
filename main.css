@@ -1,7 +1,36 @@
 .dialog {
   display: none;
+  border: 1px solid black;
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: 50%;
+  top: 300px;
+  transform: translate(-50%,-50%);
+  z-index: 200;
+  background-color: white;
+  justify-content: center;
 }
 
 .dialog--active {
+  display: flex;
+}
+
+.dialog__btn {
+}
+
+.dialog__backdrop {
+  display: none;
+  background-color: gray;
+  opacity: .5;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  position: absolute;
+}
+
+.dialog__backdrop--active {
   display: block;
 }
